@@ -85,9 +85,9 @@ public class GoogleSignUpPage extends WrapperMethods{
            entertext(birthmonth,  birth_month);
            return this;          
     }
-    public GoogleSignUpPage enterbirthday(String birthday) throws IOException, Exception
+    public GoogleSignUpPage enterbirthday(String birth_day) throws IOException, Exception
     {
-           entertext(birthmonth,  birthday);
+           entertext(birthday,  birth_day);
            return this;          
     }
     public GoogleSignUpPage enterbirthyear(String birth_year) throws IOException, Exception

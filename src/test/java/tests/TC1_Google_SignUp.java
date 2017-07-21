@@ -1,4 +1,6 @@
 package tests;
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
@@ -33,14 +35,15 @@ public class TC1_Google_SignUp extends DriverFactory {
            DriverFactory.createreprot("TC1_Google_SignUp");
            driver = DriverFactory.getDriver();
            driver.get("https://accounts.google.com/SignUp?");
-           
+           driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
            new GoogleSignUpPage()
            .enterfirstname(FirstName)
            .enterlastname(LastName)
            .enteremailaddress(email)
            .enterpassword(CreatePassword)
            .enterconfirmpassword(ConfirmPassword)
-           .enterbirthmonth(BirthMonth)
+           .enterbirthmonth(BirthMonth) 
+           
            .enterbirthday(BirthDay)
            .enterbirthyear(Birthyear)
            .entergender(Gender)
