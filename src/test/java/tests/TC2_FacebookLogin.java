@@ -12,8 +12,6 @@ public class TC2_FacebookLogin {
 		
 		System.out.println("Edited by Bala Subramani");
 		
-		System.out.println("Edited by Govind After training");
-		System.out.println("Edited by Govind After training second time");
 
 		
 	}
